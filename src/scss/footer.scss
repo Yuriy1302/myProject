@@ -1,0 +1,56 @@
+$font-regular: 'TT Lakes Regular', Verdana, sans-serif;
+
+$text-color: #7e7e82;
+$text-size: 14px;
+$text-line-height: 16px;
+
+$bg-color: #f8f8f8;
+
+.footer {
+    font: {
+        family: $font-regular;
+        size: $text-size;
+    }
+    color: $text-color;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 32px 32px 21px;
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* border: 1px dashed green; */
+}
+
+.footer__item {
+    flex-basis: 33%;
+    /* flex: 0 1 auto; */
+
+    &:last-child {
+        text-align: right;
+    }
+
+    &_link {
+        text-decoration: none;
+        color: $text-color;
+        
+    }
+}
+
+
+
+
+/* .footer__dev {
+
+} */
+
+/* .footer__ploicy {
+
+}
+
+.footer__not-an-offer {
+
+} */
