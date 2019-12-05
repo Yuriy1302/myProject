@@ -14,6 +14,7 @@
     <aside class="aside">
         <div class="aside-bar">
             <div class="aside__header">
+                <button class="mini-button button-close" type="button"></button>
                 <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
                 <button class="mini-button button-search" type="button"></button>
             </div>
@@ -33,7 +34,7 @@
     
             <div class="aside__contact-buttons">
                 <button class="mini-button button-phone mini-button--margin-right" type="button"></button>
-                <button class="mini-button button-chat mini-button--margin-right" type="button"></button>                
+                <button class="mini-button button-chart mini-button--margin-right" type="button"></button>                
                 <button class="mini-button button-profile" type="button"></button>
             </div>
             
@@ -279,36 +280,53 @@
 
 </div><!-- Container - end -->
 
+<!-- MODAL FEADBACK 1440 -->
+
+<div class="modal-container-feadback-1440 modal hidden-modal">
+    <div class="modal-feadback-1440">
+        <button class="mini-button button-close"></button>
+        <h2 class="modal-feadback-1440__title">Обратная связь</h2>
+        <form class="modal-feadback-1440__form" action="" >
+            <input class="modal-feadback-1440__form_input" type="text" placeholder="Имя">
+            <input class="modal-feadback-1440__form_input" type="tel" placeholder="Телефон">
+            <input class="modal-feadback-1440__form_input" type="email" placeholder="Элетронная почта">
+            <textarea class="modal-feadback-1440__form_input _resize" name="" id="" rows="4" placeholder="Сообщение"></textarea>
+            <label class="modal-feadback-1440__instruction">
+                Нажимая “отправить”, вы даете согласие на 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    обработку персональных данных</a> и соглашаетесь с нашей 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    политикой конфиденциальности</a>
+            </label>
+            <button class="modal-feadback-1440__button-submit" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
 
 
-
-
-
-
-
-
-    <!-- <div class="container-feedback">
-        <div class="button-container">
-            <button class="button header__button-close"></button>
-        </div>
-        <div class="container-title">
-            <h2 class="title">Обратная связь</h2>
-        </div>
-        <div class="feadback">
-            <form class="feadback-form" action="" >
-                <input class="feadback-form__input" type="text" placeholder="Имя">
-                <input class="feadback-form__input" type="tel" placeholder="Телефон">
-                <input class="feadback-form__input" type="email" placeholder="Элетронная почта">
-                <textarea class="feadback-form__input _resize" name="" id="" rows="4" placeholder="Сообщение"></textarea>
-                <p class="feadback-instruction">
+    <!-- MODAL CALL 1440 -->
+    <div class="modal-container-call-1440 modal hidden-modal">
+        <div class="modal-call-1440">
+            <button class="mini-button button-close"></button>
+            <h2 class="modal-call-1440__title">Заказать звонок</h2>
+            <form class="modal-call-1440__form" action="" >
+                <input class="modal-call-1440__form_input" type="tel" placeholder="Телефон">
+                <label class="modal-call-1440__instruction">
                     Нажимая “отправить”, вы даете согласие на 
-                    <a class="feadback-instruction__link" href="#">обработку персональных данных</a> и 
-                    <a class="feadback-instruction__link" href="#">соглашаетесь с нашей политикой конфиденциальности</a>
-                </p>
-                    <button class="feadback-form__submit-button" type="submit">Отправить</button>
+                    <a class="modal-call-1440__instruction_link" href="#">
+                        обработку персональных данных</a> и соглашаетесь с нашей 
+                    <a class="modal-call-1440__instruction_link" href="#">
+                        политикой конфиденциальности </a>
+                </label>
+                <button class="modal-call-1440__button-submit" type="submit">Отправить</button>
             </form>
         </div>
-    </div> -->
+    </div>
+
+
+
+
+    
 
 
 </body>

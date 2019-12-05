@@ -1,0 +1,211 @@
+$font-regular: 'TT Lakes Regular', Verdana, sans-serif;
+$font-medium: 'TT Lakes Medium', Verdana, sans-serif;
+$font-bold: 'TT Lakes Bold', Verdana, sans-serif;
+
+$text-color: #1b1c21;
+$text-color-title: #7e7e82;
+$text-size: 14px;
+$title-size: $text-size * 2;
+$text-line-height: 20px;
+$title-line-height: $text-line-height * 2;
+
+$button-color: #ff3e79;
+$highlight-color: #41f6d7;
+$bg-color: #f8f8f8;
+
+.modal-container-feadback-1440 {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-feadback-1440 {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    width: 100%;
+    max-width: 440px;
+
+    min-height: 100vh;
+    height: 100%;
+
+    position: relative;
+    float: right;
+
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: block;
+
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+                -2px 0px 4px rgba(69, 79, 126, 0.02);
+    
+}
+
+.button-close {
+
+/*     width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff3e79; */
+    
+    display: block;
+    position: absolute;
+    left: -72px;
+    top: 32px;
+    background-image: url('../img/close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button-close:hover {
+    box-shadow: 0 0 8px rgba(14, 24, 80, 0.4);
+}
+
+.modal-feadback-1440__title {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    /* margin-top: 40px; */
+    font-family: 'TT Lakes Bold';
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.modal-feadback-1440__title::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 40px;
+    
+    position: absolute;
+    left: -33px;
+    top: -5px;
+
+    border: 1px solid #35f5d5;
+    background-color: #41f6d7;
+    
+    border-radius: 30px;
+}
+
+
+
+
+.modal-feadback-1440__form {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.modal-feadback-1440__form_input {
+    width: 100%;
+    margin: 0;
+
+    background-image: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+
+    outline: none;
+    
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 16px;
+    color: #1b1c21;
+}
+
+.modal-feadback-1440__form_input::placeholder {
+    color: #b5b6bc;
+}
+
+.modal-feadback-1440__form_input:hover,
+.modal-feadback-1440__form_input:focus {
+    box-shadow: 0 0 8px rgba(14, 24, 80, 0.2);
+    border: 1px solid #cccccc;
+}
+
+._resize {
+    resize: none;
+}
+
+.modal-feadback-1440__instruction {
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+}
+
+.modal-feadback-1440__instruction_link {
+    text-decoration: none;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 16px;
+    color: #ff3e79;
+}
+
+.modal-feadback-1440__button-submit {
+    width: 136px;
+    height: 32px;
+    position: relative;
+    float: right;
+    
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff3e79;
+    transition: 0.2s ease-in-out;
+
+    color: #ffffff;
+    font-family: 'TT Lakes Medium';
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 0;
+    padding-right: 27px;
+    margin-top: 27px;
+/*     margin-right: 0;
+    margin-left: auto; */
+    
+}
+
+.modal-feadback-1440__button-submit::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #ffffff;
+    border-left: transparent;
+    border-bottom: transparent;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    transform: rotate(45deg);
+
+}
+
+.modal-feadback-1440__button-submit:hover {
+    box-shadow: 0 0 8px rgba(14, 24, 80, 0.4);
+}
