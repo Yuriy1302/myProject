@@ -1,0 +1,47 @@
+<section class="main__brands-container--320">
+                    <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/lenovo.png" alt="Lenovo">
+                    </a>
+                </div>
+                <div class="swiper-slide"><a class="brands-container_link--320" href="#">
+                        <img class="brands-container_img" src="img/samsung.png" alt="samsung">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/apple.png" alt="apple">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/viewsonic.png" alt="viewsonic">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/bosch.png" alt="bosch">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/hp.png" alt="hp">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/acer.png" alt="acer">
+                    </a></div>
+                <div class="swiper-slide"><a class="brands-container_link" href="#">
+                        <img class="brands-container_img" src="img/sony.png" alt="sony">
+                    </a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Swiper JS -->
+<script src="../package/js/swiper.min.js"></script>
+    
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
