@@ -5,16 +5,57 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Услуги и сервисы</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
 <link href="style.css" rel="stylesheet"></head>
 <body class="page">
 
+
+<div class="top_menu_320">
+    <div class="top_menu_320_elem">
+        <button class="mini-button button-burger mini-button--margin-right" type="button"></button>
+        <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
+    </div>
+    
+    <div class="top_menu_320_elem">
+        <div class="line mini-button--margin-right"></div>
+        <button class="mini-button button-request mini-button--margin-right" type="button"></button>
+        <button class="mini-button button-status" type="button"></button>
+    </div>
+</div>
+
+
+
+<div class="top_menu_768">
+    <div class="top_menu_768_elem">
+        <button class="mini-button button-burger mini-button--margin-right" type="button"></button>
+        <div class="line mini-button--margin-right"></div>
+        <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
+    </div>
+    <div class="top_menu_768_elem">
+        <button class="mini-button button-phone mini-button--margin-right" type="button"></button>
+        <button class="mini-button button-chart mini-button--margin-right" type="button"></button>                
+        <button class="mini-button button-profile mini-button--margin-right" type="button"></button>
+        <div class="line mini-button--margin-right"></div>
+        <button class="mini-button button-request mini-button--margin-right" type="button"></button>
+        <button class="mini-button button-status" type="button"></button>
+    </div>
+</div>
+
+
+
 <div class="container">
 
-    <aside class="aside">
+    <aside class="aside"> 
         <div class="aside-bar">
             <div class="aside__header">
                 <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
-                <button class="mini-button button-search" type="button"></button>
+                <button class="mini-button button-search button-search-margin" type="button"></button>
             </div>
                 
             <nav class="asisde__menu">
@@ -32,7 +73,7 @@
     
             <div class="aside__contact-buttons">
                 <button class="mini-button button-phone mini-button--margin-right" type="button"></button>
-                <button class="mini-button button-chat mini-button--margin-right" type="button"></button>                
+                <button class="mini-button button-chart mini-button--margin-right" type="button"></button>                
                 <button class="mini-button button-profile" type="button"></button>
             </div>
             
@@ -50,7 +91,8 @@
         </div> 
     </aside> 
 
-    <main class="main">
+    <main class="main">         
+
         <header class="main__header">
             <h1 class="main__header_title">Услуги и сервисы</h1>
             <div class="main__header_request">
@@ -58,7 +100,7 @@
                 <button class="header_request_button status-button" type="button">Статус ремонта</button>
             </div>
         </header>
-
+        
         <nav class="main__menu">
             <ul class="main__menu-list">
                 <li class="main__menu-item"><a class="main__menu-link" href="#">Ремонтируемые бренды</a></li>
@@ -71,13 +113,12 @@
         </nav>
 
         <sesction class="main__desc">
-        
             <div class="main__desc_text">
                 <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
                     гарантией производителя.
                 </p>
-                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                <p class="hidden-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
                     что подтверждает большое количество постоянных клиентов. 
                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, 
                     советуют нас родным и близким.
@@ -139,11 +180,17 @@
                         </a>
                     </li>
                 </ul>
+                
+            </div>
+            <div class="brands-container_button">
                 <button class="button-read-more" type="button">
-                    Показать все
+                        Показать все
                 </button>
             </div>
         </sesction>
+
+        
+
 
         <sesction class="main__technic-container">
             <div class="technic-container_header">
@@ -165,8 +212,10 @@
                     </li>
                                
                 </ul>
+            </div>
+            <div class="brands-container_button">
                 <button class="button-read-more" type="button">
-                    Показать все
+                        Показать все
                 </button>
             </div>
         </sesction>
@@ -192,7 +241,7 @@
                         <td class="price-container_td">Бесплатно</td>
                         <td class="price-container_td">30 мин</td>
                         <td class="price-container_td">
-                            <button class="general-button" type="button">Заказать</button>
+                            <button class="button-to-order" type="button">Заказать</button>
                         </td>
                         <td class="price-container_td table--round-top-right table--td-no-underline">&nbsp;</td>
                     </tr>
@@ -202,7 +251,7 @@
                         <td class="price-container_td">1000</td>
                         <td class="price-container_td">30-120 мин</td>
                         <td class="price-container_td">
-                            <button class="general-button" type="button">Заказать</button>
+                            <button class="button-to-order" type="button">Заказать</button>
                         </td>
                         <td class="price-container_td table--td-no-underline">&nbsp;</td>
                     </tr>
@@ -212,7 +261,7 @@
                         <td class="price-container_td">1000</td>
                         <td class="price-container_td">30-120 мин</td>
                         <td class="price-container_td">
-                            <button class="general-button" type="button">Заказать</button>
+                            <button class="button-to-order" type="button">Заказать</button>
                         </td>
                         <td class="price-container_td table--td-no-underline">&nbsp;</td>
                     </tr>
@@ -222,7 +271,7 @@
                         <td class="price-container_td">1000</td>
                         <td class="price-container_td">30-120 мин</td>
                         <td class="price-container_td">
-                            <button class="general-button" type="button">Заказать</button>
+                            <button class="button-to-order" type="button">Заказать</button>
                         </td>
                         <td class="price-container_td table--td-no-underline">&nbsp;</td>
                     </tr>
@@ -232,11 +281,67 @@
                         <td class="price-container_td">1000</td>
                         <td class="price-container_td">30-120 мин</td>
                         <td class="price-container_td">
-                            <button class="general-button" type="button">Заказать</button>
+                            <button class="button-to-order" type="button">Заказать</button>
                         </td>
                         <td class="price-container_td table--round-bottom-rigth table--td-no-underline">&nbsp;</td>
                     </tr>
                 </table>
+
+                <div class="price-swiper-blure">
+                    
+                        <div class="price-swiper-container swiper-container right">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide price-swiper-slide">
+                                    <span class="price-span-title">Ремонтные услуги</span>
+                                    <span class="price-span-text">Диагностика</span>
+                                    <span class="price-span-title">Цена</span>
+                                    <span class="price-span-text">Бесплатно</span>
+                                    <span class="price-span-title">Срок</span>
+                                    <span class="price-span-text">30 мин</span>
+                                    <button class="button-to-order button-to-order--position" type="button">Заказать</button>
+                            </div>
+                            <div class="swiper-slide price-swiper-slide">
+                                    <span class="price-span-title">Ремонтные услуги</span>
+                                    <span class="price-span-text">Замена дисплея</span>
+                                    <span class="price-span-title">Цена</span>
+                                    <span class="price-span-text">1000 Р</span>
+                                    <span class="price-span-title">Срок</span>
+                                    <span class="price-span-text">30-120 мин</span>
+                                    <button class="button-to-order button-to-order--position" type="button">Заказать</button>
+                            </div>
+                            <div class="swiper-slide price-swiper-slide">
+                                    <span class="price-span-title">Ремонтные услуги</span>
+                                    <span class="price-span-text">Замена полифонического динамика</span>
+                                    <span class="price-span-title">Цена</span>
+                                    <span class="price-span-text">1000 Р</span>
+                                    <span class="price-span-title">Срок</span>
+                                    <span class="price-span-text">30-120 мин</span>
+                                    <button class="button-to-order button-to-order--position" type="button">Заказать</button>
+                            </div>
+                            <div class="swiper-slide price-swiper-slide">
+                                    <span class="price-span-title">Ремонтные услуги</span>
+                                    <span class="price-span-text">Тестирование с выдачей технического заключения</span>
+                                    <span class="price-span-title">Цена</span>
+                                    <span class="price-span-text">1000 Р</span>
+                                    <span class="price-span-title">Срок</span>
+                                    <span class="price-span-text">30-120 мин</span>
+                                    <button class="button-to-order button-to-order--position" type="button">Заказать</button>
+                            </div>
+                            <div class="swiper-slide price-swiper-slide">
+                                    <span class="price-span-title">Ремонтные услуги</span>
+                                    <span class="price-span-text">Замена программного обеспечения</span>
+                                    <span class="price-span-title">Цена</span>
+                                    <span class="price-span-text">1000 Р</span>
+                                    <span class="price-span-title">Срок</span>
+                                    <span class="price-span-text">30-120 мин</span>
+                                    <button class="button-to-order button-to-order--position" type="button">Заказать</button>
+                            </div>
+                            
+                            </div> 
+                            
+                            <div class="swiper-pagination"></div>
+                        </div>
+                </div>
 
                 <p class="price-container__info-text">
                     Все цены указаны с учетом НДС. Стоимость ремонта указана на 
@@ -279,15 +384,107 @@
 </div>
 
 
+<div class="modal-aside-bar-container modal hidden-modal">
+    <div class="aside-bar-modal">
+        <div class="aside__header">
+            <button class="mini-button button-close mini-button--margin-right" type="button"></button>
+            <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
+            <button class="mini-button button-search button-search-margin" type="button"></button>
+        </div>
+            
+        <nav class="asisde__menu">
+            <ul class="aside__menu_list">
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Ремонт техники</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link aside__menu_link--active" href="#">Услуги и сервисы</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Корпоративным клиентам</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Продавцам техники</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Партнерам</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Производителям</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Наши сервисные центры</a></li>
+                <li class="aside__menu_item"><a class="aside__menu_link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="aside__contact-buttons">
+            <button class="mini-button button-phone mini-button--margin-right" type="button"></button>
+            <button class="mini-button button-chart mini-button--margin-right" type="button"></button>                
+            <button class="mini-button button-profile" type="button"></button>
+        </div>
+        
+        <div class="aside__contact-link">
+            <a class="aside__contact-link_mail" href="#">mail@cps.com</a>
+            <a class="aside__contact-link_phone" href="#">8 800 890 89 00</a>
+        </div>
+
+        <div class="aside__language">
+            <a class="aside__language_item aside__language--active" href="#">RU</a>
+            <a class="aside__language_item" href="#">EN</a>
+            <a class="aside__language_item" href="#">CH</a>
+        </div>
+
+    </div>
+</div>
 
 
 
 
 
+
+<div class="modal-container-feadback-1440 modal hidden-modal">
+    
+    <div class="modal-feadback-1440">
+        <button class="mini-button button-close button-close--modal-position hidden-modal"></button>
+        <h2 class="modal-feadback-1440__title">Обратная связь</h2>
+        <form class="modal-feadback-1440__form" action="">
+            <input class="modal-feadback-1440__form_input" type="text" placeholder="Имя">
+            <input class="modal-feadback-1440__form_input" type="tel" placeholder="Телефон">
+            <input class="modal-feadback-1440__form_input" type="email" placeholder="Элетронная почта">
+            <textarea class="modal-feadback-1440__form_input _resize" name="" id="" rows="4" placeholder="Сообщение"></textarea>
+            <label class="modal-feadback-1440__instruction">
+                Нажимая “отправить”, вы даете согласие на 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    обработку персональных данных</a> и соглашаетесь с нашей 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    политикой конфиденциальности</a>
+            </label>
+            <button class="modal-feadback-1440__button-submit" type="submit">Отправить</button>
+        </form>
+    </div>
+</div> 
 
 
     
+    <div class="modal-container-call-1440 modal hidden-modal"> 
+        <div class="modal-call-1440">
+            <button class="mini-button button-close button-close--modal-position"></button>
+            <h2 class="modal-call-1440__title">Заказать звонок</h2>
+            <form class="modal-call-1440__form" action="">
+                <input class="modal-call-1440__form_input" type="tel" placeholder="Телефон">
+                <label class="modal-call-1440__instruction">
+                    Нажимая “отправить”, вы даете согласие на 
+                    <a class="modal-call-1440__instruction_link" href="#">
+                        обработку персональных данных</a> и соглашаетесь с нашей 
+                    <a class="modal-call-1440__instruction_link" href="#">
+                        политикой конфиденциальности </a>
+                </label>
+                <button class="modal-call-1440__button-submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
+
+<script src="../package/js/swiper.min.js"></script>
+        
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 16,
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
