@@ -652,7 +652,7 @@
 
 /* SWIPER BRANDS */
 .brand-swiper-box {
-  display: block;
+  display: none;
   width: 100%;
   max-width: 400px;
   height: 140px;
@@ -977,7 +977,7 @@
 } */
 /* SWIPER TECHNICS */
 .technic-swiper-box {
-  display: block;
+  display: none;
   width: 100%;
   max-width: 400px;
   height: 228px;
