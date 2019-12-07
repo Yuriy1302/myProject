@@ -8,24 +8,24 @@ let buttonPhone = document.querySelector('.button-phone');
 
 let modalFeadback = document.querySelector('.modal-container-feadback-1440');
 let modalPhone = document.querySelector('.modal-container-call-1440');
-
+*/
 let modal = document.querySelectorAll('.modal');
-
+/*
 buttonFeadback.addEventListener('click', function() {
     modalFeadback.classList.remove('hidden-modal');
 });
 
 buttonPhone.addEventListener('click', function() {
     modalPhone.classList.remove('hidden-modal');
-});
+});*/
 
-let buttonClose = document.querySelectorAll('.button-close'); */
+let buttonClose = document.querySelectorAll('.button-close'); 
 
-/* for (let i = 0; i < buttonClose.length; i++) {
+for (let i = 0; i < buttonClose.length; i++) {
     buttonClose[i].addEventListener('click', function() {
         modal[i].classList.toggle('hidden-modal');
     });
-} */ /* Рабочий вариант */
+} /* Рабочий вариант */
 
 /* for (let i = 0; i < buttonClose.length; i++) {
     buttonClose[i].addEventListener('click', function() {
@@ -35,3 +35,15 @@ let buttonClose = document.querySelectorAll('.button-close'); */
 }
  */
 
+
+
+let buttonBurger = document.querySelectorAll('.button-burger');
+let modalAside = document.querySelector('.modal-aside-bar-container');
+
+for (let i = 0; i < buttonBurger.length; i++) {
+    
+    buttonBurger[i].addEventListener('click', function() {
+        modalAside.classList.remove('hidden-modal');
+    });
+
+} 
