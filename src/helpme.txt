@@ -45,3 +45,31 @@
     },
   });
 </script>
+
+
+
+import '../scss/style.scss';
+
+/* let myWindow = document.documentElement.clientWidth;
+alert(myWindow); */
+
+let modal = document.querySelectorAll('.modal'); /* Создаем коллекцию всех модальных окон */
+let buttonClose = document.querySelectorAll('.button-close'); 
+
+for (let i = 0; i < buttonClose.length; i++) {
+    buttonClose[i].addEventListener('click', function() {
+        modal[i].classList.toggle('hidden-modal');
+    });
+} 
+
+let buttonBurger = document.querySelectorAll('.button-burger'); /* Создаем коллекцию кнопок BURGER, т.к. эта кнопка есть в двух местах */
+let modalAside = document.querySelector('.modal-aside-bar-container'); /* Получаем модальное окно ASIDE */
+
+/* На каждую кнопку BURGER назначаем обработчик,  */
+for (let i = 0; i < buttonBurger.length; i++) { 
+    
+    buttonBurger[i].addEventListener('click', function() {
+        modalAside.classList.remove('hidden-modal');
+    });
+
+} 

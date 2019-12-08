@@ -1,49 +1,74 @@
 import '../scss/style.scss';
 
-/* let myWindow = document.documentElement.clientWidth;
-alert(myWindow); */
+let showPopup = function(popupOpen) {
+    popupOpen.classList.add('popup--open');
+}
 
-/* let buttonFeadback = document.querySelector('.button-chart');
-let buttonPhone = document.querySelector('.button-phone');
+let closePopup = function(popupClose) {
+    popupClose.classList.remove('popup--open');
+}
 
-let modalFeadback = document.querySelector('.modal-container-feadback-1440');
-let modalPhone = document.querySelector('.modal-container-call-1440');
-*/
-let modal = document.querySelectorAll('.modal');
-/*
-buttonFeadback.addEventListener('click', function() {
-    modalFeadback.classList.remove('hidden-modal');
-});
+let popup = document.querySelectorAll('.popup');
+let closeButton = document.querySelectorAll('.button-close');
 
-buttonPhone.addEventListener('click', function() {
-    modalPhone.classList.remove('hidden-modal');
-});*/
+let burgerButton = document.querySelectorAll('.button-burger'); /* Создаем коллекцию кнопок BURGER, т.к. эта кнопка есть в двух местах */
+let popupAside = document.querySelector('.modal-aside-bar-container'); /* Получаем всплывающее окно ASIDE */
 
-let buttonClose = document.querySelectorAll('.button-close'); 
+let phoneButton = document.querySelectorAll('.button-phone');
+let popupCall = document.querySelector('.modal-container-call-1440');
 
-for (let i = 0; i < buttonClose.length; i++) {
-    buttonClose[i].addEventListener('click', function() {
-        modal[i].classList.toggle('hidden-modal');
-    });
-} /* Рабочий вариант */
+let chartButton = document.querySelectorAll('.button-chart');
+let popupChart = document.querySelector('.modal-container-feadback-1440');
 
-/* for (let i = 0; i < buttonClose.length; i++) {
-    buttonClose[i].addEventListener('click', function() {
-        
-        modal[i].classList.toggle('hidden-modal');
+/* На каждую кнопку BURGER назначаем обработчик, открывающий окно ASIDE */
+for (let i = 0; i < burgerButton.length; i++) { 
+    burgerButton[i].addEventListener('click', function() {
+        showPopup(popupAside);
     });
 }
- */
 
-
-
-let buttonBurger = document.querySelectorAll('.button-burger');
-let modalAside = document.querySelector('.modal-aside-bar-container');
-
-for (let i = 0; i < buttonBurger.length; i++) {
-    
-    buttonBurger[i].addEventListener('click', function() {
-        modalAside.classList.remove('hidden-modal');
+/* Обработка кнопки ЗВОНКА */
+for (let i = 0; i < phoneButton.length; i++) {
+    phoneButton[i].addEventListener('click', function() {
+        closePopup(popupAside);
+        showPopup(popupCall);
     });
+}
 
-} 
+/* Обработка кнопки ОБРАТНОЙ СВЯЗИ */
+for (let i = 0; i < chartButton.length; i++) {
+    chartButton[i].addEventListener('click', function() {
+        closePopup(popupAside);
+        showPopup(popupChart);
+    });
+}
+
+/* обработка кнопки ЗАКРЫТЬ */
+for (let i = 0; i < closeButton.length; i++) {
+    closeButton[i].addEventListener('click', function() {
+        closePopup(popup[i]);
+    });
+}
+
+let descriptionContent = document.querySelector('.main__desc_text');
+let buttonShowHide = descriptionContent.querySelector('.button-read-more');
+let paragraph = descriptionContent.querySelector('.hidden--paragraph');
+
+
+buttonShowHide.addEventListener('click', function() {
+    if (paragraph.style.display != "block") {
+        paragraph.style.display = "block";
+        buttonShowHide.textContent = "Скрыть";
+        buttonShowHide.classList.remove('arrowdown-icon');
+        buttonShowHide.classList.add('arrowup-icon');
+    } else {
+        paragraph.style.display = "none";
+        buttonShowHide.textContent = "Читать далее";
+        buttonShowHide.classList.remove('arrowup-icon');
+        buttonShowHide.classList.add('arrowdown-icon');
+    }
+});
+
+
+
+

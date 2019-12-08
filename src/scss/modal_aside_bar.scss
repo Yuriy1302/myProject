@@ -4,7 +4,7 @@
 
 
 .modal-aside-bar-container {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -17,9 +17,12 @@
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.7);
 
-    
-
 }
+
+
+
+
+
 
 /* @media screen and (max-width: 768px) {
 
@@ -47,7 +50,8 @@
 
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
                 -2px 0px 4px rgba(69, 79, 126, 0.02);
-
+    z-index: 2;
+    position: relative;
    /*  border: 1px solid blue; */
 }
 

@@ -105,14 +105,20 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     cursor: pointer;
 
     position: relative;
-
-    &::before {
-      content: url('../img/arrowdown.svg');
-      position: absolute;
-      left: -24px;
-    }
-
 }
+.arrowdown-icon::before {
+    content: url('../img/arrowdown.svg');
+    position: absolute;
+    left: -24px;
+}
+.arrowup-icon::before {
+  content: url('../img/arrowup.svg');
+  position: absolute;
+  left: -24px;
+}
+
+
+
 
 .button-to-order {
   background: #ff3e79;
@@ -180,6 +186,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
 }
 
+
 .button-close {
     background-image: url('../img/close.svg');
     background-repeat: no-repeat;
@@ -192,6 +199,15 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
       left: -72px;
       top: 32px;
   }
+
+@media screen and (max-width: 767px) {
+    .button-close--modal-position {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 32px;
+    }
+}
 
 .button-search {
     background-image: url('../img/search.svg');
@@ -237,4 +253,12 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   background-image: url('../img/status.svg');
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+
+
+
+
+.popup--open {
+  display: block;
 }

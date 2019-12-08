@@ -311,7 +311,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   .main__desc_text {
     width: 50%;
     flex: 1 1 auto;
-    height: auto; 
+    height: auto;
     
     /* min-height: 160px; */
     
@@ -320,12 +320,19 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
     /* border: 1px dotted blue; */
   }
+.paragraph {
+  display: block;
+}
+
+.hidden--paragraph {
+    display: none;
+}
   
-@media screen and (max-width: 993px) {
+/* @media screen and (max-width: 993px) {
     .hidden-text {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width: 767px) {
   .main__desc_text {

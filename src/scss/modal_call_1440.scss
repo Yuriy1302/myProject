@@ -14,7 +14,7 @@ $highlight-color: #41f6d7;
 $bg-color: #f8f8f8;
 
 .modal-container-call-1440 {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -56,6 +56,12 @@ $bg-color: #f8f8f8;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
                 -2px 0px 4px rgba(69, 79, 126, 0.02);
     
+}
+
+@media screen and (max-width: 767px) {
+    .modal-call-1440 {
+        width: 320px;
+    }
 }
 
 
