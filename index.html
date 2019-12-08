@@ -103,7 +103,7 @@
         
         <nav class="main__menu">
             <ul class="main__menu-list">
-                <li class="main__menu-item"><a class="main__menu-link" href="#">Ремонтируемые бренды</a></li>
+                <li class="main__menu-item"><a class="main__menu-link main__menu-link--active-item" href="#">Ремонтируемые бренды</a></li>  
                 <li class="main__menu-item"><a class="main__menu-link" href="#">Ремонтируемые устройства</a></li>
                 <li class="main__menu-item"><a class="main__menu-link" href="#">Цены на услуги</a></li>
                 <li class="main__menu-item"><a class="main__menu-link" href="#">Адреса сервисных центров</a></li>
@@ -114,16 +114,20 @@
 
         <sesction class="main__desc">
             <div class="main__desc_text">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                <p class="paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
                     гарантией производителя.
                 </p>
-                <p class="hidden-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                <p class="paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
                     что подтверждает большое количество постоянных клиентов. 
                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, 
                     советуют нас родным и близким.
                 </p>
-                <button class="button-read-more" type="button">
+                <p class="paragraph hidden--paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
+                    гарантией производителя.
+                </p>
+                <button class="button-read-more arrowdown-icon" type="button">
                     Читать далее
                 </button>
             </div>
@@ -183,7 +187,7 @@
                 
             </div>
             <div class="brands-container_button">
-                <button class="button-read-more" type="button">
+                <button class="button-read-more arrowdown-icon" type="button">
                         Показать все
                 </button>
             </div>
@@ -267,7 +271,7 @@
                 </ul>
             </div>
             <div class="brands-container_button">
-                <button class="button-read-more" type="button">
+                <button class="button-read-more arrowdown-icon" type="button">
                         Показать все
                 </button>
             </div>
@@ -472,7 +476,7 @@
 </div>
 
 
-<div class="modal-aside-bar-container modal hidden-modal">
+<div class="modal-aside-bar-container popup">
     <div class="aside-bar-modal">
         <div class="aside__header">
             <button class="mini-button button-close mini-button--margin-right" type="button"></button>
@@ -518,10 +522,10 @@
 
 
 
-<div class="modal-container-feadback-1440 modal hidden-modal">
+<div class="modal-container-feadback-1440 popup">
     
     <div class="modal-feadback-1440">
-        <button class="mini-button button-close button-close--modal-position hidden-modal"></button>
+        <button class="mini-button button-close button-close--modal-position"></button>
         <h2 class="modal-feadback-1440__title">Обратная связь</h2>
         <form class="modal-feadback-1440__form" action="">
             <input class="modal-feadback-1440__form_input" type="text" placeholder="Имя">
@@ -542,7 +546,7 @@
 
 
     
-    <div class="modal-container-call-1440 modal hidden-modal"> 
+    <div class="modal-container-call-1440 popup"> 
         <div class="modal-call-1440">
             <button class="mini-button button-close button-close--modal-position"></button>
             <h2 class="modal-call-1440__title">Заказать звонок</h2>

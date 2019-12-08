@@ -387,10 +387,17 @@
   margin-right: 16px;
   /* border: 1px dotted blue; */ }
 
-@media screen and (max-width: 993px) {
-  .hidden-text {
-    display: none; } }
+.paragraph {
+  display: block; }
 
+.hidden--paragraph {
+  display: none; }
+
+/* @media screen and (max-width: 993px) {
+    .hidden-text {
+        display: none;
+    }
+} */
 @media screen and (max-width: 767px) {
   .main__desc_text {
     flex: 0 1 auto;
@@ -1381,7 +1388,7 @@
 
 } */
 .modal-container-feadback-1440 {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1533,7 +1540,7 @@
     clear: both;
 } */
 .modal-container-call-1440 {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1565,6 +1572,10 @@
   display: flex;
   flex-direction: column;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); }
+
+@media screen and (max-width: 767px) {
+  .modal-call-1440 {
+    width: 320px; } }
 
 .modal-call-1440__title {
   display: block;
@@ -1679,7 +1690,7 @@
   box-shadow: 0 0 8px rgba(14, 24, 80, 0.4); }
 
 .modal-aside-bar-container {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1711,6 +1722,8 @@
   justify-content: space-between;
   background-color: #ffffff;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+  z-index: 2;
+  position: relative;
   /*  border: 1px solid blue; */ }
 
 @media screen and (max-width: 767px) {
@@ -1848,10 +1861,16 @@
   margin-left: 32px;
   cursor: pointer;
   position: relative; }
-  .button-read-more::before {
-    content: url(./static/arrowdown.svg);
-    position: absolute;
-    left: -24px; }
+
+.arrowdown-icon::before {
+  content: url(./static/arrowdown.svg);
+  position: absolute;
+  left: -24px; }
+
+.arrowup-icon::before {
+  content: url(./static/arrowup.svg);
+  position: absolute;
+  left: -24px; }
 
 .button-to-order {
   background: #ff3e79;
@@ -1924,6 +1943,13 @@
   left: -72px;
   top: 32px; }
 
+@media screen and (max-width: 767px) {
+  .button-close--modal-position {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 32px; } }
+
 .button-search {
   background-image: url(./static/search.svg);
   background-repeat: no-repeat;
@@ -1961,6 +1987,9 @@
   background-image: url(./static/status.svg);
   background-repeat: no-repeat;
   background-position: center center; }
+
+.popup--open {
+  display: block; }
 
 
 /*# sourceMappingURL=style.css.map*/
