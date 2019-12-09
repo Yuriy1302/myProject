@@ -55,8 +55,18 @@
    /*  border: 1px solid blue; */
 }
 
-@media screen and (max-width: 767px) {
+
+
+@media screen and (min-width: 468px) and (max-width: 767px) {
     .aside-bar-modal {
+        width: 360px;
+        min-height: 676px;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .aside-bar-modal {
+        width: 320px;
         min-height: 676px;
     }
 }

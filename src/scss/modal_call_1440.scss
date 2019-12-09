@@ -58,7 +58,13 @@ $bg-color: #f8f8f8;
     
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 468px) and (max-width:767px) {
+    .modal-call-1440 {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 467px) {
     .modal-call-1440 {
         width: 320px;
     }

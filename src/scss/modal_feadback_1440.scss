@@ -58,6 +58,18 @@ $bg-color: #f8f8f8;
     
 }
 
+@media screen and (min-width: 468px) and (max-width:767px) {
+    .modal-feadback-1440 {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .modal-feadback-1440 {
+        width: 320px;
+    }
+}
+
 
 
 .modal-feadback-1440__title {
