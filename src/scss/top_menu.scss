@@ -13,7 +13,7 @@ $line-color: #eaeaea;
     /* border: 1px solid green; */
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .top_menu_768 {
         display: flex;
     }
@@ -21,17 +21,6 @@ $line-color: #eaeaea;
 
 
 
-
-
-/* @media screen and (max-width: 320px) {
-    
-    .top_menu_320 {
-        display: flex;
-        
-        
-    }
-
-} */
 
 
 
@@ -63,18 +52,18 @@ $line-color: #eaeaea;
     background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .top_menu_320 {
         display: flex;
     }
-}
+} */
 
-.top_menu_320_elem {
+/* .top_menu_320_elem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 0 0 auto;
-}
+} */
 
 
 

@@ -36,7 +36,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     /* border: 1px dotted lightseagreen; */
   }
 
-  .main__header {
+  .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,12 +51,12 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     /* border: 1px solid red; */
 }
 @media screen and (max-width: 767px) {
-  .main__header {
+  .header {
     padding: 42px 16px 9px;
   }
 }
  
-.main__header_title {
+.header__title {
     font-family: $font-bold;
     font-size: $title-size;
     line-height: $title-line-height;
@@ -83,12 +83,12 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   }
 
   @media screen and (max-width: 767px) {
-    .main__header_title::before {
+    .header__title::before {
         left: -18px;
       }
 }
   
-.main__header_request {
+.header__request {
     
     margin: 0;
     /* padding: 5px; */
@@ -104,7 +104,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
 
 /* При ширине от 993 до 1024 кнопки размещаются друг под другом */
 @media screen and (max-width: 1024px) {
-    .main__header_request {
+    .header__request {
         flex-direction: column;
         /* flex-wrap: nowrap; */
         justify-content: flex-start;
@@ -121,13 +121,13 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
 
 /* Прячем кнопки "Оставить заявку" и "Статус ремонта" при ширине до 768 */
 @media screen and (max-width: 992px) {
-    .main__header_request {
+    .header__request {
         display: none;
     }
   }
   
   
-.header_request_button { /* Общие свойства кнопок в header */
+.header__request_button { /* Общие свойства кнопок в header */
     font-family: $font-medium;
     font-size: $text-color + 2;
     line-height: $text-line-height + 4;
@@ -196,7 +196,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
   /* MENU */
   
-  .main__menu {
+  .menu {
     padding: 0 32px;
     margin: 0;
     width: 100%;
@@ -206,12 +206,12 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
 }
 
 @media screen and (max-width: 767px) {
-  .main__menu {
+  .menu {
     padding: 0 16px;
   }
 }
   
-.main__menu-list {
+.menu__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -224,20 +224,20 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
  
 /* Если ширина не вписывается в 1440 - пункты меню центрируются */
 @media screen and (max-width: 1439px) {
-    .main__menu-list {
+    .menu__list {
         justify-content: center;
         width: 100%;
     }
 }
 /* Усли ширина до 992 - меню прокручивается */
 @media screen and (max-width: 992px) {
-    .main__menu {
+    .menu {
         /* padding: 0; */
         /* border: 1px dashed green; */
         flex: 0 1 auto;
     }
     
-    .main__menu-list {
+    .menu__list {
         justify-content: flex-start;
         flex-wrap: nowrap;
         width: 100%;
@@ -247,17 +247,17 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
         margin-bottom: -20px;
         /* box-sizing: border-box; */
     }
-    .main__menu {
+    .menu {
         overflow: hidden;
     }
 }
 
-  .main__menu-item {
+  .menu__item {
     list-style: none;
     flex: 0 0 auto;
   }
   
-  .main__menu-link {
+  .menu__link {
     text-decoration: none;
     color: #7e7e82;
   
@@ -273,7 +273,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     }
   }
   
-  .main__menu-link--active-item {
+  .menu__link--active {
       display: block;
       padding: 8px;
       border: 2px solid #b8ffec;
@@ -284,7 +284,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
   /* CONTENT */
   
-  .main__desc {
+  .description {
       width: 100%;
       height: auto;
       
@@ -300,7 +300,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   }
   
   @media screen and (max-width: 767px) {
-    .main__desc {
+    .description {
       flex-direction: column;
       justify-content: flex-start;
       align-content: stretch;
@@ -308,7 +308,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     }
   }
   
-  .main__desc_text {
+  .description__text {
     width: 50%;
     flex: 1 1 auto;
     height: auto;
@@ -320,11 +320,11 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
     /* border: 1px dotted blue; */
   }
-.paragraph {
+.description__paragraph {
   display: block;
 }
 
-.hidden--paragraph {
+.description__paragraph--hidden {
     display: none;
 }
   
@@ -335,7 +335,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
 } */
 
 @media screen and (max-width: 767px) {
-  .main__desc_text {
+  .description__text {
     flex: 0 1 auto;
     width: 100%;
     margin: 0;
@@ -344,7 +344,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   }
 }
 
-   .main__desc_image {
+   .description__image {
     flex: 1 1 auto;
     width: 45%;
     height: auto; 
@@ -361,7 +361,7 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
   
   @media screen and (max-width: 767px) {
   
-    .main__desc_image {
+    .description__image {
       width: 100%;
       margin: 16px 0;
 

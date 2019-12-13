@@ -25,29 +25,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-.price-container__header {
-    display: block;
-    width: 100%;
-    height: 56px;
-    height: auto;
-    padding: 0 32px;
-    background-image: $bg-gradient;
-    
-    box-sizing: border-box;
-}
-
-.price-container__header_title {
-    font-family: $font-regular;
-    font-size: $text-size;
-    line-height: $text-line-height;
-    color: $text-color-title;
-    text-transform: uppercase;
-    font-weight: normal;
-    
-    display: inline-block;
-    margin: 16px 0;
-}
-
 .price-container-to-table {
     padding: 10px 32px 32px;
     

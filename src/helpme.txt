@@ -73,3 +73,318 @@ for (let i = 0; i < buttonBurger.length; i++) {
     });
 
 } 
+
+
+
+
+
+
+12-12-2019
+
+import '../scss/style.scss';
+
+let showPopup = function(popupOpen) {
+    popupOpen.classList.add('popup--open');
+    document.body.classList.add('scroll-hidden');
+    document.querySelector('.container').classList.add('bluer');
+}
+
+let closePopup = function(popupClose) {
+    popupClose.classList.remove('popup--open');
+    document.body.classList.remove('scroll-hidden');
+    document.querySelector('.container').classList.remove('bluer');
+}
+
+let popup = document.querySelectorAll('.popup');
+let closeButton = document.querySelectorAll('.button-close');
+
+let phoneButton = document.querySelectorAll('.button-phone');
+let popupCall = document.querySelector('.modal-container-call-1440');
+
+let chartButton = document.querySelectorAll('.button-chart');
+let popupChart = document.querySelector('.modal-container-feadback-1440');
+
+
+/* BURGER - назначаем обработчик, открывающий окно ASIDE */
+let burgerButton = document.querySelector('.button-burger');
+let asideBar = document.querySelector('.aside');
+let closeAside = asideBar.querySelector('.button-close');
+
+burgerButton.addEventListener('click', function() {
+    if ( !(asideBar.classList.contains('aside--active')) ) {
+        asideBar.classList.add('aside--active');
+        document.body.style.overflow = 'hidden';
+    }
+});
+
+closeAside.addEventListener('click', function() {
+    asideBar.classList.remove('aside--active');
+    document.body.style.overflow = '';
+});
+/* BURGER - назначаем обработчик, открывающий окно ASIDE - конец */
+
+
+
+
+/* Обработка кнопки ЗВОНКА */
+for (let i = 0; i < phoneButton.length; i++) {
+    phoneButton[i].addEventListener('click', function() {
+        closePopup(popupAside);
+        showPopup(popupCall);
+    });
+}
+
+/* Обработка кнопки ОБРАТНОЙ СВЯЗИ */
+for (let i = 0; i < chartButton.length; i++) {
+    chartButton[i].addEventListener('click', function() {
+        closePopup(popupAside);
+        showPopup(popupChart);
+    });
+}
+
+/* обработка кнопки ЗАКРЫТЬ */
+for (let i = 0; i < closeButton.length; i++) {
+    closeButton[i].addEventListener('click', function() {
+        closePopup(popup[i]);
+    });
+}
+
+for (let i = 0; i < popup.length; i++) {
+    
+    popup[i].addEventListener('click', function(event) {
+        if (event.target == popup[i]) {
+            closePopup(popup[i]);
+        }
+
+        /* Добавить закрытие по кнопке Esc */
+
+    });    
+}
+
+
+
+let descriptionContent = document.querySelector('.main__desc_text');
+let buttonShowHide = descriptionContent.querySelector('.button-read-more');
+let paragraph = descriptionContent.querySelector('.hidden--paragraph');
+
+
+buttonShowHide.addEventListener('click', function() {
+    if (paragraph.style.display != "block") {
+        paragraph.style.display = "block";
+        buttonShowHide.textContent = "Скрыть";
+        buttonShowHide.classList.remove('arrowdown-icon');
+        buttonShowHide.classList.add('arrowup-icon');
+    } else {
+        paragraph.style.display = "none";
+        buttonShowHide.textContent = "Читать далее";
+        buttonShowHide.classList.remove('arrowup-icon');
+        buttonShowHide.classList.add('arrowdown-icon');
+    }
+});
+
+/* Управление кнопками "Показать все" */
+
+let brandsItems = document.querySelectorAll('.brands-container__item');
+
+
+let buttonShowBrands = document.querySelector('.btn-toggle-show-brands');
+let buttonHideBrands = document.querySelector('.btn-toggle-hide-brands');
+
+
+function hideBrands() {
+    for (let i = 0; i < brandsItems.length; i++) {
+        brandsItems[i].classList.add('brands-container__item--hidden');
+    }
+}
+function showBrands() {
+    for (let i = 0; i < brandsItems.length; i++) {
+        brandsItems[i].classList.remove('brands-container__item--hidden');
+    }
+}
+
+
+
+
+
+
+hideBrands();
+
+
+
+buttonShowBrands.addEventListener('click', function() {
+    showBrands();
+    buttonShowBrands.classList.toggle('btn-toggle--hidden');
+    buttonHideBrands.classList.toggle('btn-toggle--hidden');
+});
+
+buttonHideBrands.addEventListener('click', function() {
+    hideBrands();
+    buttonHideBrands.classList.toggle('btn-toggle--hidden');
+    buttonShowBrands.classList.toggle('btn-toggle--hidden');
+});
+
+
+let technicItems = document.querySelectorAll('.technic-container__item');
+
+let buttonShowTechnics = document.querySelector('.btn-toggle-show-technics');
+let buttonHideTechnics = document.querySelector('.btn-toggle-hide-technics');
+
+function hideTechnics() {
+    for (let i = 0; i < technicItems.length; i++) {
+        technicItems[i].classList.add('technic-container__item--hidden');
+    }
+}
+function showTechnics() {
+    for (let i = 0; i < technicItems.length; i++) {
+        technicItems[i].classList.remove('technic-container__item--hidden');
+    }
+}
+
+hideTechnics();
+
+buttonShowTechnics.addEventListener('click', function() {
+    showTechnics();
+    buttonShowTechnics.classList.toggle('btn-toggle--hidden');
+    buttonHideTechnics.classList.toggle('btn-toggle--hidden');
+});
+
+buttonHideTechnics.addEventListener('click', function() {
+    hideTechnics();
+    buttonHideTechnics.classList.toggle('btn-toggle--hidden');
+    buttonShowTechnics.classList.toggle('btn-toggle--hidden');
+});
+
+/* Управление кнопками "Показать все" - конец */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Управление кнопками "Показать все" */
+
+let brandsItems = document.querySelectorAll('.brands-container__item');
+
+let technicItems = document.querySelectorAll('.technic-container__item');
+
+let buttonShow = document.querySelector('.btn-toggle-show');
+let buttonHide = document.querySelector('.btn-toggle-hide');
+
+function hideBrands() {
+    for (let i = 0; i < brandsItems.length; i++) {
+        brandsItems[i].classList.add('__item--hidden');
+    }
+}
+
+function showBrands() {
+    for (let i = 0; i < brandsItems.length; i++) {
+        brandsItems[i].classList.remove('__item--hidden');
+    }
+}
+
+hideBrands();
+
+
+buttonShow.addEventListener('click', function() {
+    showBrands();
+    buttonShow.classList.toggle('btn-toggle--hidden');
+    buttonHide.classList.toggle('btn-toggle--hidden');
+});
+
+buttonHide.addEventListener('click', function() {
+    hideBrands();
+    buttonHide.classList.toggle('btn-toggle--hidden');
+    buttonShow.classList.toggle('btn-toggle--hidden');
+});
+
+/* Управление кнопками "Показать все" - конец */
+
+
+
+
+13.12.2019
+
+<!-- MODAL FEADBACK 1440 -->
+
+<div class="modal-container-feadback-1440 popup"> <!-- popup -->
+    <div class="cover-div"></div>
+    <div class="modal-feadback-1440">
+        <button class="mini-button button-close button-close--modal-position"></button>
+        <h2 class="modal-feadback-1440__title">Обратная связь</h2>
+        <form class="modal-feadback-1440__form" action="" >
+            <input class="modal-feadback-1440__form_input" type="text" placeholder="Имя">
+            <input class="modal-feadback-1440__form_input" type="tel" placeholder="Телефон">
+            <input class="modal-feadback-1440__form_input" type="email" placeholder="Элетронная почта">
+            <textarea class="modal-feadback-1440__form_input _resize" name="" id="" rows="4" placeholder="Сообщение"></textarea>
+            <label class="modal-feadback-1440__instruction">
+                Нажимая “отправить”, вы даете согласие на 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    обработку персональных данных</a> и соглашаетесь с нашей 
+                <a class="modal-feadback-1440__instruction_link" href="#">
+                    политикой конфиденциальности</a>
+            </label>
+            <button class="modal-feadback-1440__button-submit" type="submit">Отправить</button>
+        </form>
+    </div>
+</div> <!-- MODAL FEADBACK 1440 - END -->
+.modal-container-feadback-1440 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    overflow: auto;   
+        
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);    
+}
+
+
+.modal-feadback-1440 {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    width: 100%;
+    max-width: 440px;
+
+    height: auto;
+    min-height: 100%;
+    display: block;
+
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+        
+    /* border: 1px solid green; */
+
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2),
+                2px 0px 4px rgba(69, 79, 126, 0.02);
+    
+}
+
+.modal-feadback-1440--active {
+    transform: none;
+}
