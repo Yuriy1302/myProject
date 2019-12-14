@@ -38,20 +38,52 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 469px) and (max-width: 992px) {
     .technic-container__content {
-        padding: 12px 0;
+        
         padding: 24px 0 24px 24px;
         
     }
 }
 
-@media screen and (max-width: 675px) {
+/* @media screen and (max-width: 675px) {
     .technic-container__content {
         display: none;
         
     }
     
+} */
+
+@media screen and (max-width: 468px) { /* Проверить ширину */
+    .technic-container__content {
+        padding: 12px 0;
+        height: 230px;
+        position: relative;
+    }
+    .technic-container__content::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: 0;
+        width: 25px;
+        height: 120px;
+        z-index: 5;
+        background-color: transparent;
+        box-shadow: 10px 0 20px 5px #ffffff;
+        
+        }
+    .technic-container__content::after {
+        content: "";
+        position: absolute;
+        right: -25px;
+        top: 0;
+        width: 25px;
+        height: 120px;
+        z-index: 5;
+        background-color: transparent;
+        box-shadow: -10px 0 20px 5px #ffffff;
+        
+    }
 }
 
 
@@ -261,6 +293,50 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
         min-width: 224px;
     }
 } */
+
+@media screen and (max-width: 468px) {
+    .technic-container__link {
+        
+        width: 100%;
+        min-width: 240px;
+        
+    }
+}
+
+
+.swiper-container-technic {
+    position: relative !important;
+    left: 0;
+    max-width: 75%;
+    /* height: 100%; */
+    min-width: 240px;
+
+    height: 200px;
+    
+    /* background-color: bisque; */
+
+    overflow: visible !important;
+    /* padding: 16px 64px 16px 16px; */
+    padding: 0 !important;
+    /* margin: 0; */
+    margin: 0 16px !important;
+}
+
+@media screen and (max-width: 468px) {
+    .swiper-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.swiper-slide-technic {
+    min-width: 240px;
+    max-height: 160px;
+    box-sizing: border-box;
+    background-color: transparent;
+    list-style: none;
+    /* background-color: blueviolet; */
+}
 
 
 
