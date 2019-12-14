@@ -164,7 +164,7 @@ left: -24px;
 
 
 
-.button-to-order {
+.btn-to-order {
   background: #ff3e79;
   border-radius: 30px;
   border: none;
@@ -189,13 +189,13 @@ left: -24px;
   }
 }
 
-.button-to-order--position {
+.btn-to-order--position {
   position: absolute;
   right: 16px;
   bottom: 16px;
 }
 
-.button-to-order::after {
+.btn-to-order::after {
   content: "";
   display: block;
   position: absolute;
