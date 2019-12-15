@@ -13,28 +13,23 @@
 <body class="page">
 
 
-
-
-
-
 <div class="top_menu_768">
     <div class="top_menu_768_elem">
-        <button class="mini-button button-burger mr--16" type="button"></button>
-        <div class="line mr--16"></div>
+        <button class="btn-primary btn-primary--burger mr--16" type="button"></button>
+        <div class="line mr--16 btn-group--hidden"></div>
         <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
     </div>
     <div class="top_menu_768_elem">
-        <div class="btn-group">
-            <button class="mini-button button-phone mr--16" type="button"></button>
-            <button class="mini-button button-chart mr--16" type="button"></button>                
-            <button class="mini-button button-profile mr--16" type="button"></button>
+        <div class="btn-group btn-group--hidden">
+            <button class="btn-primary btn-primary--phone mr--16" type="button"></button>
+            <button class="btn-primary btn-primary--chart mr--16" type="button"></button>                
+            <button class="btn-primary btn-primary--profile mr--16" type="button"></button>
         </div>
         <div class="line mr--16"></div>
-        <button class="mini-button button-request mr--16" type="button"></button>
-        <button class="mini-button button-status" type="button"></button>
+        <button class="btn-primary btn-primary--request mr--16" type="button"></button>
+        <button class="btn-primary btn-primary--status" type="button"></button>
     </div>
 </div>
-
 
 
 <div class="container">
@@ -42,9 +37,9 @@
     <aside class="aside"> 
         <div class="aside__bar">
             <div class="aside__header">
-                <button class="mini-button button-close mr--16 btn-close--hidden" type="button"></button>
+                <button class="btn-primary btn-primary--close mr--16 btn-primary--hidden" type="button"></button>
                 <div class="aside__header_logo"><a href="#"><img src="img/logo.svg" alt="Логотип компании"></a></div>
-                <button class="mini-button button-search button-search-margin" type="button"></button>
+                <button class="btn-primary btn-primary--search btn-primary--search--margin" type="button"></button>
             </div>
                 
             <nav class="asisde__menu">
@@ -61,9 +56,9 @@
             </nav>
     
             <div class="aside__contact-buttons">
-                <button class="mini-button button-phone mr--16" type="button"></button>
-                <button class="mini-button button-chart mr--16" type="button"></button>                
-                <button class="mini-button button-profile" type="button"></button>
+                <button class="btn-primary btn-primary--phone mr--16" type="button"></button>
+                <button class="btn-primary btn-primary--chart mr--16" type="button"></button>                
+                <button class="btn-primary btn-primary--profile" type="button"></button>
             </div>
             
             <div class="aside__contact-link">
@@ -107,7 +102,7 @@
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной 
                     гарантией производителя.
                 </p>
-                <p class="description__aragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                <p class="description__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
                     что подтверждает большое количество постоянных клиентов. 
                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, 
                     советуют нас родным и близким.
@@ -218,9 +213,6 @@
                 </button>
             </div>
         </sesction> 
-
-        
-
 
         <sesction class="technic-container">
             <div class="rubric">
@@ -370,16 +362,11 @@
                                     <div class="cell decor cell-bottom-right">&nbsp;</div>
                                 </div>
                         </div>
-                
                         
                         <div class="sw-pagination-price"></div>
-                        
                     </div>
-                
                 </div>
                 
-
-
                 <p class="price-container__info-text">
                     Все цены указаны с учетом НДС. Стоимость ремонта указана на 
                     единичную услугу. Для получения коммерческого предложения на 
@@ -391,11 +378,6 @@
                 </form>
             </div>
         </section>
-
-
-
-
-
 
         <footer class="footer">
             <span class="footer__item">
@@ -411,26 +393,15 @@
             </span>
         </footer>
 
-
-
     </main>
-
-
-
 
 </div>
 
 
 
-
-
-
-
-
-
 <div class="modal-container-feadback-1440"> 
     <div class="modal-feadback-1440">
-        <button class="mini-button button-close button-close--modal-position"></button>
+        <button class="btn-primary btn-primary--close btn-primary--close--modal-position"></button>
         <h2 class="modal-feadback-1440__title">Обратная связь</h2>
         <form class="modal-feadback-1440__form" action="">
             <input class="modal-feadback-1440__form_input" type="text" placeholder="Имя">
@@ -449,11 +420,10 @@
     </div>
 </div> 
 
-
     
     <div class="modal-container-call-1440 popup"> 
         <div class="modal-call-1440">
-            <button class="mini-button button-close button-close--modal-position"></button>
+            <button class="btn-primary btn-primary--close btn-primary--close--modal-position"></button>
             <h2 class="modal-call-1440__title">Заказать звонок</h2>
             <form class="modal-call-1440__form" action="">
                 <input class="modal-call-1440__form_input" type="tel" placeholder="Телефон">
@@ -475,16 +445,8 @@
 
 <script src="../package/js/swiper.min.js"></script>
         
-
 <script>
-  /* var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 16,
-      pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  }); */
-
+ 
 /* Brands */
 let swiperContainerBrands = document.querySelector('.sw-container-brands');
 let swiperWrapperBrands = document.querySelector('.sw-wrapper-brands');
@@ -497,13 +459,11 @@ let swiperWrapperTechnic = document.querySelector('.sw-wrapper-technic');
 let swiperSlideTechnic = document.querySelectorAll('.sw-slide-technic');
 let swiperPaginationTechnic = document.querySelector('.sw-pagination-technic');
 
-
 /* Price */
 let swiperContainerPrice = document.querySelector('.sw-container-price');
 let swiperWrapperPrice = document.querySelector('.sw-wrapper-price');
 let swiperSlidePrice = document.querySelectorAll('.sw-slide-price');
 let swiperPaginationPrice = document.querySelector('.sw-pagination-price');
-
 
 if ( window.innerWidth < 468 ) {
     /* Brands */
@@ -534,7 +494,6 @@ if ( window.innerWidth < 468 ) {
 
     swiperPaginationTechnic.classList.add('swiper-pagination');
 
-
     /* Price */
     swiperContainerPrice.classList.remove('table');
     swiperContainerPrice.classList.add('swiper-container');
@@ -549,7 +508,7 @@ if ( window.innerWidth < 468 ) {
 
     swiperPaginationPrice.classList.add('swiper-pagination');
 
-
+    /* Initialize Swiper */
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         pagination: {
@@ -557,10 +516,7 @@ if ( window.innerWidth < 468 ) {
             clickable: true,
         },
         });
-
 }
-
-
 
 </script>
 
