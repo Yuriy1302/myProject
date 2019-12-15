@@ -38,71 +38,50 @@ $bg-color: #f8f8f8;
 
 $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
 
-
-
 .page {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-  font-family: $font-regular;
-  font-size: $text-size + 2;
-  line-height: $text-line-height + 4;
-  color: $text-color;
-
-  margin: 0 auto;
-  padding: 0;
-  /* padding-bottom: 21px; */
-  
-  max-width: 1440px;
-  width: 100%;
-  height: auto;
-  
-  display: flex;
-  justify-content: flex-start;
-
-  box-sizing: border-box;
+    font-family: $font-regular;
+    font-size: $text-size + 2;
+    line-height: $text-line-height + 4;
+    color: $text-color;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
 }
 
-/* @media screen and (max-width: 768px) {
-  .container {
-      max-width: 768px;
-      
-  }
-} */
-
 @media screen and (max-width: 767px) {
-  .container {
-      
-      flex-direction: column;
-  }
+    .container {
+        
+        flex-direction: column;
+    }
 }
 
 .hidden-modal {
-  display: none;
+    display: none;
 }
 
 /* BUTTONS */
-
 /* Кнопки "Показать все" */
 .btn-toggle {
     font-family: $font-bold;
     font-size: $text-size + 2;
     line-height: $text-line-height + 4;
     color: $text-color;
-
     background-color: transparent;
-
     border: none;
-    /* border: 1px solid grey; */
     outline: none;
-
     padding: 0;
-    /* padding-left: 15px; */
     margin-left: 32px;
-    
     cursor: pointer;
     display: block;
     position: relative;
@@ -114,40 +93,34 @@ $bg-gradient: linear-gradient(270deg, $bg-color 0%, #ffffff 100%);
     left: -24px;
 }
 .btn-toggle--hidden {
-  display: none;
+    display: none;
 }
 .btn-icon-up::before {
-  content: url('../img/arrowup.svg');
-  position: absolute;
-  left: -24px;
+    content: url('../img/arrowup.svg');
+    position: absolute;
+    left: -24px;
 }
 /* Кнопки "Показать все" - конец */
 
 .button-read-more {
-  font-family: $font-bold;
-  font-size: $text-size + 2;
-  line-height: $text-line-height + 4;
-  color: $text-color;
-
-  background-color: transparent;
-
-  border: none;
-  /* border: 1px solid grey; */
-  outline: none;
-
-  padding: 0;
-  /* padding-left: 15px; */
-  margin-left: 32px;
-  
-  cursor: pointer;
-  display: block;
-  position: relative;
+    font-family: $font-bold;
+    font-size: $text-size + 2;
+    line-height: $text-line-height + 4;
+    color: $text-color;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 32px;
+    cursor: pointer;
+    display: block;
+    position: relative;
 }
 
 .arrowdown-icon::before {
-  content: url('../img/arrowdown.svg');
-  position: absolute;
-  left: -24px;
+    content: url('../img/arrowdown.svg');
+    position: absolute;
+    left: -24px;
 }
 
 .arrowup-icon::before {
@@ -157,87 +130,68 @@ left: -24px;
 }
 
 
-
-
-
-
-
-
-
 .btn-to-order {
-  background: #ff3e79;
-  border-radius: 30px;
-  border: none;
-  width: 119px;
-  height: 32px;
-  margin: 0;
-  position: relative;
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 600;
-  color: white;
-  text-align: left;
-  text-transform: uppercase;
-  padding-left: 12px;
-
-  transition: 0.2s ease-in-out;
-  
-  &:hover {
-    box-shadow: 0 0 7px 0 rgba(14, 24, 80, 0.5);
-  }
+    background: #ff3e79;
+    border-radius: 30px;
+    border: none;
+    width: 119px;
+    height: 32px;
+    margin: 0;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 12px;
+    transition: 0.2s ease-in-out;
+    
+    &:hover {
+        box-shadow: 0 0 7px 0 rgba(14, 24, 80, 0.5);
+    }
 }
 
 .btn-to-order--position {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
 }
 
 .btn-to-order::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-
-  width: 5px;
-  height: 5px;
-
-  border-right: 2px solid white;
-  border-top: 2px solid white;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
 }
-
-
 
 .btn-primary {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  background-color: $button-color;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: $button-color;
 }
-
 
 .btn-primary:hover {
   box-shadow: 0 0 7px 0 rgba(14, 24, 80, 0.5);
 }
 
-
 .btn-primary--close {
     background-image: url('../img/close.svg');
     background-repeat: no-repeat;
     background-position: center center;
-  }
-
-
-
-
+}
 
 .btn-primary--search {
     background-image: url('../img/search.svg');
@@ -268,21 +222,21 @@ left: -24px;
 }
 
 .btn-primary--burger {
-  background-image: url('../img/burger.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-image: url('../img/burger.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .btn-primary--request {
-  background-image: url('../img/request.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-image: url('../img/request.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .btn-primary--status {
-  background-image: url('../img/status.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
+    background-image: url('../img/status.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .btn-group {
@@ -295,52 +249,40 @@ left: -24px;
     }
 }
 
-
 .btn-primary--hidden {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width: 992px) {
-  .btn-primary--hidden {
-    display: block;
-  }
+    .btn-primary--hidden {
+        display: block;
+    }
 }
-
 
 .popup--open {
-  display: block;
+    display: block;
 }
-
-/* .scroll-hidden {
-  overflow: hidden;
-} */
-/* 
-.bluer {
-  filter: blur(2px);
-} */
 
 /* Модификатов margin-right для кнопок */
 .mr--16 {
     margin-right: 16px;
 }
 
-
-
 .modal-overlay {
-  display: block;
-  z-index: 50;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(250, 250, 250, 0.5);
+    display: block;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.5);
 }
 
 .visually-hidden {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 

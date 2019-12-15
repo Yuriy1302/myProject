@@ -14,32 +14,17 @@ $highlight-color: #41f6d7;
 $bg-color: #f8f8f8;
 
 
-/* Aside to desctop */
-
 .aside {
-    display: block;  /* block */
-    
+    display: block;
     position: relative;
     width: 320px;
-    
     height: 100vh;
     min-height: 100%;
     margin: 0;
     padding: 0;
-  
-    /* box-sizing: border-box; */
-  
     flex: 0 0 auto;
-    /* border: 1px solid red; */
     background-color: #ffffff;
-    /* background-color: rgb(221, 242, 255); */
 }
-  
-/* @media screen and (max-width: 992px) {
-    .aside {
-        display: none;
-    }
-} */
 
 @media screen and (max-width: 992px) {
     .aside {
@@ -48,8 +33,6 @@ $bg-color: #f8f8f8;
         z-index: 100;
         top: 0;
         left: 0;
-
-
         transform: translateX(-100%);
         transition: transform 0.5s ease-out;
     }
@@ -58,28 +41,17 @@ $bg-color: #f8f8f8;
         box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
                 2px 0px 4px rgba(69, 79, 126, 0.02);
     }
-
 }
-
-
-
-
 
 .aside__bar {
     width: 100%;
-    /* height: 100vh; */ /* !!!!!!!! */
     min-height: 870px;
-
     padding: 35px 24px ;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     background-color: #ffffff;
-
-   /*  border: 1px solid blue; */
 }
 
 @media screen and (max-width: 468px) {
@@ -88,30 +60,21 @@ $bg-color: #f8f8f8;
     }
 }
 
-
-
 .aside__header {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    
-    /* margin: 0; */
-    
-        
     flex: 0 0 auto;
 }
 
 .aside__header_logo {
     display: block;
-    /* margin-left: 16px; */
 }
 
 .asisde__menu {
     width: 100%;
     padding: 0;
     margin-top: 25px;
-    flex: 0 0 auto;
-    
+    flex: 0 0 auto;    
 }
 
 .aside__menu_list {
@@ -126,9 +89,7 @@ $bg-color: #f8f8f8;
 .aside__menu_item {
     display: block;
     position: relative;
-
     margin-bottom: 16px; 
-    /* color: #1B1C21; */
 }
 
 .aside__menu_link {
@@ -167,47 +128,33 @@ $bg-color: #f8f8f8;
 .aside__contact-buttons {
     margin: auto 0 0;
     padding: 0;
-
     display: flex;
-    justify-content: flex-start; 
-    
-    /* border: 1px solid red; */
-    
+    justify-content: flex-start;
 }
 
 .aside__contact-link {
-    
     padding: 0;
     margin: 0;
     margin-top: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    /* border: 1px dashed orangered; */
 }
 
 .aside__contact-link_mail {
-    /* width: auto; */
     text-decoration: none;
-    /* display: inline; */
     font-family: $font-medium;
     font-size: $text-size + 2;
     line-height: $title-line-height + 4;
     color: $text-color;
-    /* margin: 0 0 12px 0; */
     margin: 0;
     padding: 0;
-
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 80%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size .2s;
-
-    /* border: 1px solid dodgerblue; */
 
     &:hover {
         background-size: 100% 1px;
@@ -220,7 +167,6 @@ $bg-color: #f8f8f8;
     font-size: $text-size + 10;
     line-height: $title-line-height + 12;
     color: $text-color;
-    /* margin: 0 0 40px 0; */
     margin: 0;
     padding: 0;
 
@@ -229,8 +175,6 @@ $bg-color: #f8f8f8;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .2s;
-
-   /*  border: 1px solid rgb(30, 255, 86); */
 
     &:hover {
         background-size: 100% 2px;
@@ -257,17 +201,3 @@ $bg-color: #f8f8f8;
 .aside__language--active {
     color: $text-color-title;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

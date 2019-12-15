@@ -19,20 +19,13 @@ $bg-color: #f8f8f8;
     top: 0;
     right: 0;
     z-index: 100;
-
     width: 440px;
     height: 100%;
-
     transform: translateX(130%);
     transition: transform 0.5s ease-out;
-
     background-color: #ffffff;
 }
-/* @media screen and (max-width: 767px) {
-    .modal-container-call-1440 {
-        width: 320px;
-    }
-} */
+
 @media screen and (min-width: 468px) and (max-width:767px) {
     .modal-container-call-1440 {
         width: 360px;
@@ -49,17 +42,12 @@ $bg-color: #f8f8f8;
     position: static;
     top: 0;
     left: 0;
-    
     width: 100%;
     height: 100%;
-    
     overflow: auto;
-
     padding: 32px;
     box-sizing: border-box;
-
     background-color: #ffffff;
-    
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     line-height: 24px;
@@ -71,10 +59,6 @@ $bg-color: #f8f8f8;
     box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2),
                 2px 0px 4px rgba(69, 79, 126, 0.02);
 }
-
-
-
-
 
 .modal-call-1440__title {
     display: block;
@@ -95,19 +79,13 @@ $bg-color: #f8f8f8;
     display: block;
     width: 3px;
     height: 40px;
-    
     position: absolute;
     left: -33px;
     top: -5px;
-
     border: 1px solid #35f5d5;
     background-color: #41f6d7;
-    
     border-radius: 30px;
 }
-
-
-
 
 .modal-call-1440__form {
     width: 100%;
@@ -120,16 +98,13 @@ $bg-color: #f8f8f8;
 .modal-call-1440__form_input {
     width: 100%;
     margin: 0;
-
     background-image: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 16px;
     box-sizing: border-box;
-
     outline: none;
-    
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     line-height: 16px;
@@ -154,7 +129,6 @@ $bg-color: #f8f8f8;
     display: block;
     padding: 0;
     margin: 0;
-    
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     line-height: 16px;
@@ -174,14 +148,12 @@ $bg-color: #f8f8f8;
     height: 32px;
     position: relative;
     float: right;
-    
     border: none;
     border-radius: 30px;
     outline: none;
     cursor: pointer;
     background-color: #ff3e79;
     transition: 0.2s ease-in-out;
-
     color: #ffffff;
     font-family: 'TT Lakes Medium';
     font-size: 12px;
@@ -190,9 +162,6 @@ $bg-color: #f8f8f8;
     padding: 0;
     padding-right: 27px;
     margin-top: 27px;
-/*     margin-right: 0;
-    margin-left: auto; */
-    
 }
 
 .modal-call-1440__button-submit::after {
@@ -207,7 +176,6 @@ $bg-color: #f8f8f8;
     right: 17px;
     top: 12px;
     transform: rotate(45deg);
-
 }
 
 .modal-call-1440__button-submit:hover {

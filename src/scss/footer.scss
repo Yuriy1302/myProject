@@ -12,17 +12,12 @@ $bg-color: #f8f8f8;
         size: $text-size;
     }
     color: $text-color;
-
     width: 100%;
     box-sizing: border-box;
-
     padding: 32px 32px 21px;
-        
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    /* border: 1px dashed green; */
 }
 
 @media screen and (max-width: 767px) {
@@ -37,8 +32,6 @@ $bg-color: #f8f8f8;
 
 .footer__item {
     flex-basis: 33%;
-    /* flex: 0 1 auto; */
-    /* border: 1px solid green; */
 
     &:last-child {
         text-align: right;
@@ -47,7 +40,6 @@ $bg-color: #f8f8f8;
     &_link {
         text-decoration: none;
         color: $text-color;
-        
     }
 }
 
@@ -55,23 +47,10 @@ $bg-color: #f8f8f8;
     .footer__item {
         text-align: center;
         margin-bottom: 16px;
+        
         &:last-child {
             text-align: center;
         }
     }
 }
 
-
-
-
-/* .footer__dev {
-
-} */
-
-/* .footer__ploicy {
-
-}
-
-.footer__not-an-offer {
-
-} */

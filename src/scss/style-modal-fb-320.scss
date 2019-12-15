@@ -1,192 +1,153 @@
-
-
 .container-feedback {
-  font-family: $font-text;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1b1c21;
-  width: 100%;
-  max-width: 320px;
-
-  
-  min-height: 100vh;
-  height: 100%;
-  
-  padding: 24px 16px;
-  
-  display: block;
-
-  background-color: #eeeeee;
+    font-family: $font-text;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1c21;
+    width: 100%;
+    max-width: 320px;
+    min-height: 100vh;
+    height: 100%;
+    padding: 24px 16px;
+    display: block;
+    background-color: #eeeeee;
 }
 
-
 .button-container {
-  
-  width: 100%;
-  height: auto;
-  
+    width: 100%;
+    height: auto;
 }
 
 .button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  background-color: #ff3e79;
-  
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff3e79;
 }
 
-
 .header__button-close {
-  background-image: url('../img/close.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-
+    background-image: url('../img/close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .container-title {
-  display: block;
-  width: 100%;
-
-  margin-top: 40px;
-
+    display: block;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .title {
-  font-family: $font-text;
-  font-size: 24px;
-  line-height: 32px;
-
-  margin: 0;
-  padding: 0;
-  display: block;
-  
-  position: relative;
+    font-family: $font-text;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
 }
 
 .title::before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 40px;
-  
-  position: absolute;
-  left: -16px;
-  top: -5px;
-
-  border: 1px solid #35f5d5;
-  background-color: #41f6d7;
-  
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    left: -16px;
+    top: -5px;
+    border: 1px solid #35f5d5;
+    background-color: #41f6d7;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
-
-
-
 .feadback-form {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-  margin-top: 24px;
-
-  
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-top: 24px;
 }
 
 .feadback-form__input {
-  width: 100%;
-  margin: 0;
-  background-image: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-
-  outline: none;
-  
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-
+    width: 100%;
+    margin: 0;
+    background-image: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
 }
 
 .feadback-form__input::placeholder {
-  color: #b5b6bc;
+    color: #b5b6bc;
 }
 
 .feadback-form__input:hover,
 .feadback-form__input:focus {
-  box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.3);
-  border: 1px solid #d1d1d1;
+    box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.3);
+    border: 1px solid #d1d1d1;
 }
-
-
 
 ._resize {
-  resize: none;
+    resize: none;
 }
 
-
 .feadback-instruction {
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7e7e82;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
 }
 
 .feadback-instruction__link {
-  text-decoration: none;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: #ff3e79;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #ff3e79;
 }
 
-
 .feadback-form__submit-button {
-  width: 136px;
-  height: 32px;
-  position: relative;
-   
-  
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  cursor: pointer;
-  background-color: #ff3e79;
-
-  color: #ffffff;
-  font-family: $font-text;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding-right: 27px;
-  margin-top: 19px;
-  margin-right: 0;
-  margin-left: auto;
-  
+    width: 136px;
+    height: 32px;
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #ff3e79;
+    color: #ffffff;
+    font-family: $font-text;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-right: 27px;
+    margin-top: 19px;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .feadback-form__submit-button::after {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  border: 2px solid #ffffff;
-  border-left: transparent;
-  border-bottom: transparent;
-  position: absolute;
-  right: 17px;
-  top: 12px;
-  transform: rotate(45deg);
-
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #ffffff;
+    border-left: transparent;
+    border-bottom: transparent;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    transform: rotate(45deg);
 }
-
