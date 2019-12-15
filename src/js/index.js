@@ -11,9 +11,9 @@ overlayFone.addEventListener('click', function() {
 });
 
 /* BURGER - назначаем обработчик, открывающий окно ASIDE */
-let burgerButton = document.querySelector('.button-burger');
+let burgerButton = document.querySelector('.btn-primary--burger');
 let asideBar = document.querySelector('.aside');
-let closeAside = asideBar.querySelector('.button-close');
+let closeAside = asideBar.querySelector('.btn-primary--close');
 
 burgerButton.addEventListener('click', function() {
     if ( !(asideBar.classList.contains('aside--active')) ) {
@@ -34,9 +34,9 @@ closeAside.addEventListener('click', function() {
 
 /* CHART - обработка кнопок обратной связи и закрытие */
 
-let chartButton = document.querySelectorAll('.button-chart');
+let chartButton = document.querySelectorAll('.btn-primary--chart');
 let modalFeadBack = document.querySelector('.modal-container-feadback-1440');
-let closeButtonFeadBack = modalFeadBack.querySelector('.button-close');
+let closeButtonFeadBack = modalFeadBack.querySelector('.btn-primary--close');
 
 for (let i = 0; i < chartButton.length; i++) {
     chartButton[i].addEventListener('click', function() {
@@ -59,9 +59,9 @@ closeButtonFeadBack.addEventListener('click', function() {
 
 /* PHON - обработка кнопки обратного звонка */
 
-let phoneButton = document.querySelectorAll('.button-phone');
+let phoneButton = document.querySelectorAll('.btn-primary--phone');
 let modalCallBack = document.querySelector('.modal-container-call-1440');
-let closeButtonCallBack = modalCallBack.querySelector('.button-close');
+let closeButtonCallBack = modalCallBack.querySelector('.btn-primary--close');
 
 for (let i = 0; i < phoneButton.length; i++) {
     phoneButton[i].addEventListener('click', function() {

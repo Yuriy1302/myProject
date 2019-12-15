@@ -210,7 +210,9 @@ left: -24px;
   border-top: 2px solid white;
 }
 
-.mini-button {
+
+
+.btn-primary {
   width: 40px;
   height: 40px;
   border: none;
@@ -222,13 +224,12 @@ left: -24px;
 }
 
 
-.mini-button:hover {
-  box-shadow: 0 0 7px 0 rgba(14, 24, 80, 0.4);
-  
+.btn-primary:hover {
+  box-shadow: 0 0 7px 0 rgba(14, 24, 80, 0.5);
 }
 
 
-.button-close {
+.btn-primary--close {
     background-image: url('../img/close.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -238,47 +239,47 @@ left: -24px;
 
 
 
-.button-search {
+.btn-primary--search {
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.button-search-margin {
+.btn-primary--search--margin {
     margin-left: auto;
 }
 
-.button-phone {
+.btn-primary--phone {
     background-image: url('../img/phone.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.button-chart {
+.btn-primary--chart {
     background-image: url('../img/chat.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.button-profile {
+.btn-primary--profile {
     background-image: url('../img/profile.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.button-burger {
+.btn-primary--burger {
   background-image: url('../img/burger.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.button-request {
+.btn-primary--request {
   background-image: url('../img/request.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.button-status {
+.btn-primary--status {
   background-image: url('../img/status.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -289,18 +290,18 @@ left: -24px;
     padding: 0;
 }
 @media screen and (max-width: 768px) {
-    .btn-group {
+    .btn-group--hidden {
         display: none;
     }
 }
 
 
-.btn-close--hidden {
+.btn-primary--hidden {
   display: none;
 }
 
 @media screen and (max-width: 992px) {
-  .btn-close--hidden {
+  .btn-primary--hidden {
     display: block;
   }
 }
@@ -342,3 +343,4 @@ left: -24px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
