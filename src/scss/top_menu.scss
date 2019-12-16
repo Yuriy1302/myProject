@@ -1,7 +1,7 @@
 $button-color: #ff3e79;
 $line-color: #eaeaea;
 
-.top_menu_768 {
+.top-menu {
     display: none;
     justify-content: space-between;
     width: 100%;
@@ -11,12 +11,12 @@ $line-color: #eaeaea;
 }
 
 @media screen and (max-width: 992px) {
-    .top_menu_768 {
+    .top-menu {
         display: flex;
     }
 }
 
-.top_menu_768_elem {
+.top-menu__elem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,14 +27,4 @@ $line-color: #eaeaea;
     width: 1px;
     height: 32px;
     background-color: $line-color;
-}
-
-.top_menu_320 {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 24px 16px;
-    box-sizing: border-box;
-    background-color: #ffffff;
 }

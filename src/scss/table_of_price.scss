@@ -28,7 +28,7 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
 
 @media screen and (max-width: 675px) {
     .price-container-to-table {
-        padding: 10px 0 50px;
+        padding: 10px 10px 50px;
         
     }
 }
@@ -42,7 +42,7 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     overflow: initial;
 }
 
-@media (max-width: 468px) {
+@media screen and (max-width: 468px) {
     .main-container {
         position: relative;
         width: 100%;
@@ -75,7 +75,13 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     }
 }
 
-.title-320 {
+@media screen and (min-width: 468px) and (max-width: 784px) {
+    .main-container {
+        overflow-x: scroll;
+    }
+}
+
+.table__subtitle {
     display: none;
     padding: 0;
     font-family: Tahoma, sans-serif;
@@ -84,11 +90,11 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     color: #7e7e82;
 }
 
-@media (max-width: 468px) {
-    .title-320 {
+@media screen and (max-width: 468px) {
+    .table__subtitle {
         display: block;
     }
-    .mt-16 {
+    .table__margin-top {
         margin-top: 16px;
     }
 }
@@ -102,11 +108,13 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     color: black;
 }
 
-.row {
+
+
+.table__row {
     display: table-row;
 }
 
-.cell {
+.table__cell {
     display: table-cell;
     border-bottom: 1px solid #eaeaea;
     padding: 20px;
@@ -117,20 +125,40 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     color: $text-color;
 }
 
-@media (min-width: 786px) {
-    .cell:nth-child(2) {
+@media screen and (min-width: 786px) {
+    .table__cell:nth-child(2) {
         width: 50%;
     }
-    .cell:nth-child(3), .cell:nth-child(4) {
+    .table__cell:nth-child(3), .table__cell:nth-child(4) {
         width: 15%;
     }
-    .cell:nth-child(5) {
+    .table__cell:nth-child(5) {
         width: 20%;
         min-width: 130px;
     }
 }
 
-.cell-th {
+@media screen and (max-width: 785px) {
+    .table__cell:nth-child(2) {
+        width: auto;
+    }
+    .table__cell:nth-child(3) {
+        width: auto;
+        min-width: 75px;
+    }
+    .table__cell:nth-child(4) {
+        width: auto;
+        min-width: 85px;
+    }
+    .table__cell:nth-child(5) {
+        width: auto;
+        min-width: 120px;
+    }
+}
+
+
+
+.table__cell-th {
     background-color: transparent;
     border: none;
     font-family: $font-regular;
@@ -139,36 +167,45 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     color: $text-color-title;
 }
 
-.decor {
-    min-width: 16px;
+.table__decor {
     padding: 0;
     border-bottom: 1px solid transparent;
     background-color: #ffffff;
 }
+.table__decor-th {
+    min-width: 24px;
+    padding: 0;
+}
 
-.cell-top-left {
+@media screen and (min-width: 469px) and (max-width: 991px) {
+    .table__decor-th {
+       min-width: 8px;
+    }
+}
+
+.table__cell-top-left {
     border-top-left-radius: 6px;
 }
-.cell-top-right {
+.table__cell-top-right {
     border-top-right-radius: 6px;
 }
-.cell-bottom-left {
+.table__cell-bottom-left {
     border-bottom-left-radius: 6px;
 }
-.cell-bottom-right {
+.table__cell-bottom-right {
     border-bottom-right-radius: 6px;
 }
 
-.row:last-child > .cell {
+.table__row:last-child > .cell {
     border-bottom: none;
 }
 
 
 @media (max-width: 468px) {
-    .row--hidden {
+    .table__row--hidden {
         display: none;
     }
-    .cell {
+    .table__cell {
         display: block;
         position: relative;
         border: none;
@@ -178,12 +215,12 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
         font-size: 14px;
         line-height: 18px;
     }
-    .cell-btn {
+    .table__cell-btn {
         position: absolute;
         bottom: 16px;
         right: 16px;
     }
-    .decor {
+    .table__decor {
         display: none;
     }
 }

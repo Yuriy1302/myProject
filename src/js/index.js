@@ -83,90 +83,6 @@ closeButtonCallBack.addEventListener('click', function() {
 /* PHON - обработка кнопки обратного звонка - конец */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function showPopup(modal) {
-    if ( asideBar.classList.contains('aside--active') ) {
-        asideBar.classList.remove('aside--active');
-    }
-    modal.classList.add('popup--open');
-    modal.querySelector('.modal-feadback-1440').classList.add('modal-feadback-1440--active'); */
-    /* document.body.classList.add('scroll-hidden'); */
-    /* document.body.style.overflow = 'hidden'; */
-    /* document.querySelector('.container').classList.add('bluer'); */
-/* } */
-
-/* function closePopup(modal) {
-    modal.classList.remove('popup--open');
-    modal.querySelector('.modal-feadback-1440').classList.remove('modal-feadback-1440--active'); */
-    /* document.body.classList.remove('scroll-hidden'); */
-    /* document.body.style.overflow = ''; */
-    /* document.querySelector('.container').classList.remove('bluer'); */
-/* }
- */
-
-/* let closeButton = document.querySelectorAll('.button-close'); */
-
-/* let phoneButton = document.querySelectorAll('.button-phone');
-let popupCall = document.querySelector('.modal-container-call-1440'); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Обработка кнопки ЗВОНКА */
-/* for (let i = 0; i < phoneButton.length; i++) {
-    phoneButton[i].addEventListener('click', function() {
-        closePopup(popupAside);
-        showPopup(popupCall);
-    });
-} */
-
-
-
-/* обработка кнопки ЗАКРЫТЬ */
-/* for (let i = 0; i < closeButton.length; i++) {
-    closeButton[i].addEventListener('click', function() {
-        closePopup(popup[i]);
-    });
-} */
-
-/* for (let i = 0; i < popup.length; i++) {
-    
-    popup[i].addEventListener('click', function(event) {
-        if (event.target == popup[i]) {
-            closePopup(popup[i]);
-        }
-    });    
-} */
-
-
-
 /* ПОКАЗАТЬ ВСЕ - управление кнопками */
 
 let descriptionContent = document.querySelector('.description__text');
@@ -189,62 +105,58 @@ buttonShowHide.addEventListener('click', function() {
 
 let brandsItems = document.querySelectorAll('.brands-container__item');
 let buttonShowBrands = document.querySelector('.btn-toggle-show-brands');
-let buttonHideBrands = document.querySelector('.btn-toggle-hide-brands');
 
-function hideBrands() {
+let technicItems = document.querySelectorAll('.technic-container__item');
+let buttonShowTechnics = document.querySelector('.btn-toggle-show-technics');
+
+function startHideBrands() {
     for (let i = 0; i < brandsItems.length; i++) {
         brandsItems[i].classList.add('brands-container__item--hidden');
     }
 }
-function showBrands() {
-    for (let i = 0; i < brandsItems.length; i++) {
-        brandsItems[i].classList.remove('brands-container__item--hidden');
-    }
-}
-
-hideBrands();
-
-buttonShowBrands.addEventListener('click', function() {
-    showBrands();
-    buttonShowBrands.classList.toggle('btn-toggle--hidden');
-    buttonHideBrands.classList.toggle('btn-toggle--hidden');
-});
-
-buttonHideBrands.addEventListener('click', function() {
-    hideBrands();
-    buttonHideBrands.classList.toggle('btn-toggle--hidden');
-    buttonShowBrands.classList.toggle('btn-toggle--hidden');
-});
-
-
-let technicItems = document.querySelectorAll('.technic-container__item');
-
-let buttonShowTechnics = document.querySelector('.btn-toggle-show-technics');
-let buttonHideTechnics = document.querySelector('.btn-toggle-hide-technics');
-
-function hideTechnics() {
+function startHideTechnics() {
     for (let i = 0; i < technicItems.length; i++) {
         technicItems[i].classList.add('technic-container__item--hidden');
     }
 }
-function showTechnics() {
-    for (let i = 0; i < technicItems.length; i++) {
-        technicItems[i].classList.remove('technic-container__item--hidden');
-    }
+
+startHideBrands();
+startHideTechnics();
+
+function btnToggleUp(btn) {
+    btn.classList.remove('btn-icon-down');
+    btn.classList.add('btn-icon-up');
+    btn.textContent = 'Скрыть';
+}
+function btnToggleDown(btn) {
+    btn.classList.remove('btn-icon-up');
+    btn.classList.add('btn-icon-down');
+    btn.textContent = 'Показать все';
 }
 
-hideTechnics();
+buttonShowBrands.addEventListener('click', function() {
+    for (let i = 0; i < brandsItems.length; i++) {
+        if ( brandsItems[i].classList.contains('brands-container__item--hidden') ) {
+            brandsItems[i].classList.remove('brands-container__item--hidden');
+            btnToggleUp(buttonShowBrands);
+        } else {
+            brandsItems[i].classList.add('brands-container__item--hidden');
+            btnToggleDown(buttonShowBrands);
+        }
+    }
+});
 
 buttonShowTechnics.addEventListener('click', function() {
-    showTechnics();
-    buttonShowTechnics.classList.toggle('btn-toggle--hidden');
-    buttonHideTechnics.classList.toggle('btn-toggle--hidden');
+    for (let i = 0; i < technicItems.length; i++) {
+        if ( technicItems[i].classList.contains('technic-container__item--hidden') ) {
+            technicItems[i].classList.remove('technic-container__item--hidden');
+            btnToggleUp(buttonShowTechnics);
+        } else {
+            technicItems[i].classList.add('technic-container__item--hidden');
+            btnToggleDown(buttonShowTechnics);
+        }
+    }
 });
 
-buttonHideTechnics.addEventListener('click', function() {
-    hideTechnics();
-    buttonHideTechnics.classList.toggle('btn-toggle--hidden');
-    buttonShowTechnics.classList.toggle('btn-toggle--hidden');
-});
 
 /* ПОКАЗАТЬ ВСЕ - управление кнопками - конец */
