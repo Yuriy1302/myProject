@@ -106,8 +106,13 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     }
 }
 
-@media screen and (min-width: 468px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .brands-container__item--hidden:nth-child(n+7) {
+        display: none;
+    }
+}
+@media screen and (min-width: 468px) and (max-width: 767px) {
+    .brands-container__item--hidden:nth-child(n+3) {
         display: none;
     }
 }
@@ -189,7 +194,7 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 468px) {
     .show-more-content {
         display: none;
     }

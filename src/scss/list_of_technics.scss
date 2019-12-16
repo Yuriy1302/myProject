@@ -107,8 +107,13 @@ $bg-gradient: linear-gradient(90deg, $bg-color 0%, #ffffff 100%);
     }
 }
 
-@media screen and (min-width: 468px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .technic-container__item--hidden:nth-child(n+4) {
+        display: none;
+    }
+}
+@media screen and (min-width: 468px) and (max-width: 767px) {
+    .technic-container__item--hidden:nth-child(n+3) {
         display: none;
     }
 }
